@@ -27,12 +27,7 @@ const infoObjToResponse = {
 
 app.get("/", (req, res) => {
   var options = {
-    root: path.join(__dirname, "/src/htmls"),
-    dotfiles: "deny",
-    headers: {
-      "x-timestamp": Date.now(),
-      "x-sent": true
-    }
+    root: path.join(__dirname, "/src/htmls")
   };
   res.sendFile("/index.html", options);
 });
