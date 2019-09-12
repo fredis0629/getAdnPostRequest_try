@@ -8,15 +8,26 @@
   </head>
   <body>
     <form action="/getRequest" method="get">
-      First name: <input type="text" name="fmane" /><br />
-      Last name: <input type="text" name="lname" /><br />
+      <p>getRequest</p>
+      name: <input type="text" name="name" /><br />
       <input type="submit" value="Submit" />
     </form>
     <form action="/postRequest" method="post">
+      <p>postRequest</p>
+      First name: <input type="text" name="fname" /><br />
+      Last name: <input type="text" name="lname" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <form action="/ajaxGetRequest" method="get" id="ajaxGet">
+      <p>ajaxGetRequest</p>
+      name: <input type="text" name="name" id="ajaxGetInput" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <form action="/ajaxPostRequest" method="post" id="ajaxPost">
+      <p>ajaxPostRequest</p>
       First name: <input type="text" name="fname" /><br />
       Last name: <input type="text" name="lname" /><br />
       <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
->
